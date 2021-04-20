@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="containerAdd">
+            <div class="item circle"onclick="sin()">sin</div>
+            <div class="item circle"onclick="cos()">cos</div>
+            <div class="item circle" onclick="tan()">tan</div>
+            <div class="item circle"onclick="asin()">asin</div>
+            <div class="item circle"onclick="acos()">acos</div>
+            <div class="item circle" onclick="atan()">atan</div>
+            <div class="item circle" onclick="sqrt()">sqrt</div>
+            <div class="item circle" onclick="cbrt()">cqrt</div>
+            <div class="item circle" onclick="rand()">rand</div>
+            <div class="item circle" onclick="PI()">PI</div>
+            <div class="item circle" onclick="pow()">pow</div>
+            <div class="item circle" onclick="c()">1/x</div>
+          
+
+
+        </div>
+        <div class="container">
+            <div class="item input">
+                <form name="form"><input class="inp" type="text" name="textview" readonly></form>
+            </div>
+            <div class="item clean" onclick="clean()">C</div>
+            <div class="item percent" onclick="percent()">&#37;</div>
+            <div class="item back" onclick="back()">&larr;</div>
+            <div class="item circle yellow" onclick="insert('+')">+</div>
+            <div class="item circle yellow" onclick="insert('-')">-</div>
+            <div class="item circle yellow" onclick="insert('*')">&times;</div>
+            <div class="item circle yellow" onclick="insert('/')">&divide;</div>
+            <div class="item circle" onclick="insert('7')">7</div>
+            <div class="item circle" onclick="insert('8')">8</div>
+            <div class="item circle" onclick="insert('9')">9</div>
+            <div class="item circle" onclick="insert('(')">(</div>
+            <div class="item circle" onclick="insert('4')">4</div>
+            <div class="item circle" onclick="insert('5')">5</div>
+            <div class="item circle" onclick="insert('6')">6</div>
+            <div class="item circle" onclick="insert(')')">)</div>
+            <div class="item circle" onclick="insert('1')">1</div>
+            <div class="item circle" onclick="insert('2')">2</div>
+            <div class="item circle" onclick="insert('3')">3</div>
+            <div class="item equal yellow" onclick="equal()">=</div>
+            <div class="item circle" onclick="insert('.')">.</div>
+            <div class="item circless zero" onclick="insert('0')">0</div>
+        </div>
+
+    </div>
+    <script src="./main.js"> </script>
+</body>
+
+</html>
