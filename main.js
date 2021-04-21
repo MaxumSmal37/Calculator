@@ -62,11 +62,11 @@ function atan() {
 function rand() {
    var exp = document.form.textview.value;
 
-   document.form.textview.value = Math.random(exp)
+   document.form.textview.value = exp +Math.random(exp)
 }
 function PI() {
-
-   document.form.textview.value = Math.PI
+   var exp = document.form.textview.value;
+   document.form.textview.value = exp + Math.PI
 }
 function c() {
 
@@ -75,7 +75,27 @@ function c() {
 }
 
 
-addEventListener('keydown', back)
+document.addEventListener('keydown',(event) =>
+{
+   if (event.code === 'Escape')
+   {
+       clean();
+   };
+} );
+document.addEventListener('keydown',(event) =>
+{
+   if (event.code === 'Enter')
+   {
+       equal();
+   };
+} );
+document.addEventListener('keydown',(event) =>
+{
+   if (event.code === 'Backspace')
+   {
+       back();
+   };
+} );
 
 
 
